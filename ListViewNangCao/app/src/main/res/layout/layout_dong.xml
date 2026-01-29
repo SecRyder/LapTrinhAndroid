@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivHinh"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/london" />
+
+    <TextView
+        android:id="@+id/tvNameCity"
+        android:textSize="24dp"
+        android:layout_toRightOf="@+id/ivHinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E63"
+        android:text="Name City" />
+
+    <TextView
+        android:id="@+id/tvLinkHinh"
+        android:textColor="#3F51B5"
+        android:layout_toRightOf="@+id/ivHinh"
+        android:layout_below="@+id/tvNameCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link Wiki" />
+</RelativeLayout>
