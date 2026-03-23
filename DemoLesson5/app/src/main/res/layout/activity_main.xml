@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ptit" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_round"
+        android:backgroundTint="@null"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:text="Vui lòng nhập user"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_round"
+        android:backgroundTint="@null"
+        android:drawableStart="@drawable/ic_pass"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:text="Vui lòng nhập password"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/ckRememberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Nhớ mật khẩu"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonround"
+            android:padding="10dp"
+            android:text="Đăng nhập"
+            android:textSize="18dp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonround"
+            android:padding="10dp"
+            android:text="Thoát"
+            android:textSize="18dp"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+</LinearLayout>

@@ -12,8 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="First Fragment"
-        android:textSize="25sp" />
+        android:text="Person"
+        android:textColor="#43a047"
+        android:textSize="25sp"
+        android:textStyle="italic|bold" />
 
     <ListView
         android:id="@+id/lvCity"
@@ -22,7 +24,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        tools:ignore="AdapterViewChildren">
-    </ListView>
+        tools:ignore="AdapterViewChildren"></ListView>
 
 </LinearLayout>

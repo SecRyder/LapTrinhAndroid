@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools.context=".LoginSucess">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="DemoLesson5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="362dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ptit" />
+
+
+    <Button
+        android:id="@+id/btnwriteIS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonround"
+        android:text="write internal storage"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnreadIS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonround"
+        android:text="read internal storage"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnwriteFC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonround"
+        android:text="write cache file"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnreadFC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonround"
+        android:text="read cache file"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnwriteES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonround"
+        android:text="write externel storage"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnreadES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonround"
+        android:text="read exterbak storage"
+        app:backgroundTint="@null" />
+
+   </LinearLayout>
