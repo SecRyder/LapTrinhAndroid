@@ -40,30 +40,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private BroadcastReceiver mBroadCastReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (MY_ACTION.equals(intent.getAction())) {
-                String data = intent.getStringExtra(MY_TEXT);
-                tv_received.setText(data);
-                Toast.makeText(context, "Received: " + data, Toast.LENGTH_SHORT).show();
-            }
-        }
-    };
+//    private BroadcastReceiver mBroadCastReceiver = new BroadcastReceiver() {
+//        @Override
+//        public void onReceive(Context context, Intent intent) {
+//            if (MY_ACTION.equals(intent.getAction())) {
+//                String data = intent.getStringExtra(MY_TEXT);
+//                tv_received.setText(data);
+//                Toast.makeText(context, "Received: " + data, Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//    };
 
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        IntentFilter filter = new IntentFilter(MY_ACTION);
-        registerReceiver(mBroadCastReceiver, filter);
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        unregisterReceiver(mBroadCastReceiver);
-    }
 
     private void clickSendBroadcast() {
         Intent intent = new Intent(MY_ACTION);
@@ -71,9 +58,4 @@ public class MainActivity extends AppCompatActivity {
         sendBroadcast(intent);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unregisterReceiver(mBroadCastReceiver);
-    }
 }

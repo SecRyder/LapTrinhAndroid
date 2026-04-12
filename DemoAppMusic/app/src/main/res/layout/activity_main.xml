@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Music make your life happier"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/music_icon" />
+
+    <SeekBar
+        android:id="@+id/seekBarTime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#fff"
+        android:progress="40"
+        android:progressTint="#fff" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="00:00"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_play"
+        app:backgroundTint="@null" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgvolumnedown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_volume_down" />
+
+        <SeekBar
+            android:id="@+id/seekBarVolume"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:progress="40"
+            android:progressTint="#fff"
+            android:thumbTint="#fff" />
+
+        <ImageView
+            android:id="@+id/imgvolumneup"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_volume_up" />
+    </LinearLayout>
+</LinearLayout>

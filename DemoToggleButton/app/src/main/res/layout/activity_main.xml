@@ -14,6 +14,7 @@
         android:id="@+id/toggleButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OFF"
+        android:textOff="OFF"
+        android:textOn="ON"
         android:layout_gravity="center"/>
 </LinearLayout>

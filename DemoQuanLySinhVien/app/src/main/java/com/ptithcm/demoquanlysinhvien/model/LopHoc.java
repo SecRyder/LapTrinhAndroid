@@ -1,6 +1,9 @@
 package com.ptithcm.demoquanlysinhvien.model;
 
 public class LopHoc {
+    private Integer id;
+    private String tenlophoc;
+
     public Integer getId() {
         return id;
     }
@@ -16,9 +19,6 @@ public class LopHoc {
     public void setTenlophoc(String tenlophoc) {
         this.tenlophoc = tenlophoc;
     }
-
-    private Integer id;
-    private String tenlophoc;
 
     public LopHoc() {
 
